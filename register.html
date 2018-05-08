@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jegybazár | regisztráció</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <div class="parallax parallax-first parallax-img-3">
+    <div class="parallax-filter"></div>
+    <div class="container">
+
+      <header class="masthead">
+        <h3 class="text-muted">Jegybazár</h3>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav text-md-center nav-justified w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Események</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tickets.html">Jegyek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Rólunk</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="login.html">Belépés</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      </div> <!--parallax-->
+    </div> <!--container-->
+      <!-- login form -->
+    <div class="container">
+      <div class="row justify-content-center row-login-form">
+        <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            Regisztrálj be,<br> és már veheted is a jegyeket.
+          </div>
+          <div class="card border-secondary">
+            <div class="card-header">Regisztáció</div>
+            <div class="card-body">
+              <form id="registerName">
+                <div class="form-group">
+                  <label for="registerName">Név</label>
+                  <input name="registerName" type="text" class="form-control" id="registerName" placeholder="név">
+                </div>
+                <div class="form-group">
+                  <label for="registerEmail">Email</label>
+                  <input name="registerEmail" type="email" class="form-control" id="registerEmail" placeholder="email">
+                </div>
+                <div class="form-group">
+                  <label for="birthDate">születési idő</label>
+                  <input name="registerBirthDate" type="date" class="form-control" id="birthDate"
+                  value="1999-09-10" max="2000-01-01" >
+                </div>
+                <div class="form-group">
+                  <label class="custom-control custom-radio">
+                    <input id="radio1" name="sex" type="radio" value="1" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">fiú</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radio2" name="sex" type="radio" value="2" class="custom-control-input" checked>
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">lány</span>
+                  </label>
+                </div>    
+                <div class="form-group">
+                  <select name="location" class="custom-select">
+                      <option value="notset" selected>Milyen településen laksz?</option>
+                      <option value="1">Főváros</option>
+                      <option value="2">Megyeszékhely</option>
+                      <option value="3">Kistelepülés</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label class="cherry-custom-file">
+                        <input name="avatar" type="file" id="file2">
+                        <span class="file-name">válassz avatart</span>
+                      </label>
+                </div>
+                <div class="form-group">
+                  <label for="registerPassword">Jelszó</label>
+                  <input name="registerPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                  title="Legyen benne szám, kisbetű, nagybetű, és legalább 8 karakter"
+                  required type="password" class="form-control" id="registerPassword" placeholder="jelszó">
+                </div>
+                <div class="form-group">
+                  <label for="registerPassword2">Jelszó mégegyszer</label>
+                  <input name="registerPassword2" required type="password" class="form-control" id="registerPassword2" placeholder="jelszó mégegyszer">
+                </div>
+
+                <button type="submit" class="btn btn-primary">regisztráció</button>
+              </form>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div> <!-- /container -->
+
+    <div class="container footer-container">
+        <!-- Site footer -->
+        <footer class="footer">
+           <p>&copy; Company 2017</p>
+         </footer>
+     </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

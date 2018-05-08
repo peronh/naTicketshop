@@ -1,0 +1,213 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jegybazár | események</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="parallax parallax-first parallax-img-2"> <!--parallax-->
+      <div class="parallax-filter"></div>
+
+    <div class="container">
+      <header class="masthead">
+        <h3 class="text-muted">Jegybazár</h3>
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav text-md-center nav-justified w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="events.html">Események</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tickets.html">Jegyek</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Rólunk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Belépés</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    
+      <!--<main role="main">-->
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+          <h1>Események</h1>
+          <p class="lead">Itt találod az események táblázatát. Ha érdekel egy, akkor innen azonnal tovább tudsz ugrani a jegyvásárlásra. Jó szórakozást!</p>
+          <p></p>
+        </div>
+
+      </div>  <!--/parallax-->
+
+      <!-- container -->
+      <div class="container events-container">
+
+        <div class="row events-search-row">
+          <div class="col-12">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="keresés..." aria-label="Keresés...">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+        </div>
+
+        <!-- Example row of columns -->
+        <!--
+        <div class="row">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Esemény</th>
+                <th scope="col">Időpont</th>
+                <th scope="col">Helyszín</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Sziget Fesztivál</td>
+                <td>2018-08-02</td>
+                <td>Hajógyári Sziget</td>
+                <td>
+                  <a href="#" class="btn btn-primary btn-sm">
+                  tovább <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Diótörő</td>
+                <td>2017-11-02</td>
+                <td>Opera</td>
+                <td>
+                  <a href="#" class="btn btn-primary btn-sm">
+                  tovább <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Macskák</td>
+                <td>2017-12-22</td>
+                <td>Vígszínház</td>
+                <td>
+                  <a href="#" class="btn btn-primary btn-sm">
+                  tovább <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      -->
+
+      <div class="card-deck events-card-deck">
+        <a href="tickets.html?event=1" class="card">
+            <img class="card-img-top" src="assets/sziget.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Sziget Fesztivál</h4>
+              <p class="card-text">Látogass el a 25 éves szigetre, és bulizz a legjobb arcokkal.</p>
+              <p class="card-text"><small class="text-muted">2017-08-03</small></p>
+              <button class="btn btn-link float-right">tovább</button>
+            </div>
+          </a>
+          <a href="tickets.html?event=2" class="card">
+              <img class="card-img-top" src="assets/diotoro.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Diótörő</h4>
+                <p class="card-text">Nézd grandiózus balett előadást, most elővételben.</p>
+                <p class="card-text"><small class="text-muted">2017-11-23</small></p>
+                <p><button class="btn btn-link float-right">tovább</button></p>
+              </div>
+            </a>
+            <a href="tickets.html?event=3" class="card">
+                <img class="card-img-top" src="assets/macskak.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Macskák Musical</h4>
+                  <p class="card-text">Amerika házhoz jön, abben a nagyszerű, és izgalmas musicalban.</p>
+                  <p class="card-text"><small class="text-muted">2017-12-30</small></p>
+                  <p><button class="btn btn-link float-right">tovább</button></p>
+                </div>
+              </a>
+          </div>
+
+          <div class="card-deck events-card-deck">
+            <a href="tickets.html?event=1" class="card">
+                <img class="card-img-top" src="assets/sziget.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Sziget Fesztivál</h4>
+                  <p class="card-text">Látogass el a 25 éves szigetre, és bulizz a legjobb arcokkal.</p>
+                  <p class="card-text"><small class="text-muted">2017-08-03</small></p>
+                  <button class="btn btn-link float-right">tovább</button>
+                </div>
+              </a>
+              <a href="tickets.html?event=2" class="card">
+                  <img class="card-img-top" src="assets/diotoro.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Diótörő</h4>
+                    <p class="card-text">Nézd grandiózus balett előadást, most elővételben.</p>
+                    <p class="card-text"><small class="text-muted">2017-11-23</small></p>
+                    <p><button class="btn btn-link float-right">tovább</button></p>
+                  </div>
+                </a>
+                <a href="tickets.html?event=3" class="card">
+                    <img class="card-img-top" src="assets/macskak.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Macskák Musical</h4>
+                      <p class="card-text">Amerika házhoz jön, abben a nagyszerű, és izgalmas musicalban.</p>
+                      <p class="card-text"><small class="text-muted">2017-12-30</small></p>
+                      <p><button class="btn btn-link float-right">tovább</button></p>
+                    </div>
+                  </a>
+              </div>
+
+      <!--</main>-->
+    </div> <!-- /container -->
+
+    <div class="container footer-container">
+        <!-- Site footer -->
+        <footer class="footer">
+           <p>&copy; Company 2017</p>
+         </footer>
+     </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lib/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

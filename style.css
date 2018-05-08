@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('lib/font-awesome-4.7.0/css/font-awesome.min.css');
+
+
+
+
+/*parallax*/
+
+body,
+html {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url(assets/para1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    z-index: -100;
+}
+
+.parallax-second {
+    background-image: url(assets/para1.jpg);
+    height: 50%;
+}
+
+.parallax-img-2 {
+    background-image: url(assets/para3.jpg);
+}
+
+.parallax-img-3 {
+    background-image: url(assets/para4.jpg);
+    height: 70%;
+}
+
+.parallax-filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .3;
+    z-index: -99;
+}
+
+.parallax-ticket {
+    height: 100%;
+}
+
+h1 {
+    padding-top: 20px;
+}
+
+.text-muted {
+    color: rgb(240, 233, 233)!important;
+}
+
+
+
+
+/*------------*/
+
+body {
+    /*padding-top: 20px;
+	padding-bottom: 100px;*/
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    /*top: 0;
+	right: 0;
+	left: 0;
+	min-height: 100%;*/
+}
+
+.container {
+    position: relative;
+}
+
+table {
+    background-color: #ffffff!important;
+    mix-blend-mode: luminosity;
+}
+
+.footer-container {
+    /*position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+}
+
+footer.footer {
+    padding: 15px;
+    margin: 20px 0;
+    border-top: 1px solid #e5e5e5;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.footer p {
+    margin: 0;
+    text-align: center;
+    display: flex;
+}
+
+
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+.navbar {
+    background-image: linear-gradient(to bottom, #f7f7f7b6 0%, #eee 100%);
+    border: 1px solid #e5e5e5;
+    opacity: .7;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+    }
+
+    .navbar-nav .nav-item {
+        flex: 1 0 auto;
+    }
+}
+
+
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+header h3 {
+    padding: 20px 0;
+}
+
+.lead {
+    font-weight: 100;
+}
+
+
+
+
+/* home page elements*/
+
+.media {
+    margin-bottom: 20px;
+}
+
+.media .media-body .btn-primary {
+    margin-top: 20px;
+}
+
+.media .media-body {
+    text-align: justify;
+}
+
+.home-media-image {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 16px;
+}
+
+.home-row {
+    margin-top: 100px;
+}
+
+
+
+
+/* login page */
+
+.row-login-form {
+    margin-top: 50px;
+}
+
+.cherry-custom-file {
+    height: 32px;
+    background-color: #007bff;
+    width: 75%;
+    border-radius: 3px;
+    box-shadow: 0 0 3px;
+    cursor: pointer;
+}
+
+.cherry-custom-file input {
+    height: 0;
+    visibility: hidden;
+}
+
+.cherry-custom-file .file-name {
+    position: relative;
+    top: -22px;
+    left: 10px;
+    color: aliceblue;
+}
+
+
+
+
+/*evets page*/
+
+.events-container {
+    margin-top: 40px;
+}
+
+.events-card-deck {
+    margin: 20px auto;
+}
+
+.events-card-deck .card {
+    position: relative;
+    color: black;
+}
+
+.events-card-deck .card .btn-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.events-card-deck .card:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 12px;
+    text-decoration: none;
+}
+
+.events-card-deck .card button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.events-search-row {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* media breakpoint text */
+
+@media (max-width: 575px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 1199px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+}
