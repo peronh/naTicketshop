@@ -24,7 +24,6 @@ html {
 
 .parallax-second {
     background-image: url(assets/para1.jpg);
-    height: 50%;
 }
 
 .parallax-img-2 {
@@ -33,7 +32,6 @@ html {
 
 .parallax-img-3 {
     background-image: url(assets/para4.jpg);
-    height: 70%;
 }
 
 .parallax-filter {
