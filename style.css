@@ -219,9 +219,6 @@ header h3 {
     color: aliceblue;
 }
 
-
-
-
 /*evets page*/
 
 .events-container {
@@ -256,6 +253,21 @@ header h3 {
 
 .events-search-row {
     margin-bottom: 20px;
+}
+
+.ticket-table thead th[data-key] {
+    cursor: pointer;
+}
+
+.ticket-table thead th[data-key] i.fa-sort-amount-asc,
+.ticket-table thead th[data-key] i.fa-sort-amount-desc {
+    font-size: 70%;
+    display: none;
+}
+
+.ticket-table thead th[data-key].asc i.fa-sort-amount-asc,
+.ticket-table thead th[data-key].desc i.fa-sort-amount-desc {
+    display: inline;
 }
 
 
