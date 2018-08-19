@@ -1,51 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('lib/font-awesome-4.7.0/css/font-awesome.min.css');
 
-
-
-
 /*parallax*/
 
 body,
 html {
-    height: 100%;
-}
-
-.parallax {
-    background-image: url(assets/para1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    position: relative;
-    z-index: -100;
-}
-
-.parallax-second {
-    background-image: url(assets/para1.jpg);
-}
-
-.parallax-img-2 {
-    background-image: url(assets/para3.jpg);
-}
-
-.parallax-img-3 {
-    background-image: url(assets/para4.jpg);
-}
-
-.parallax-filter {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: black;
-    opacity: .3;
-    z-index: -99;
-}
-
-.parallax-ticket {
     height: 100%;
 }
 
@@ -54,25 +13,27 @@ h1 {
 }
 
 .text-muted {
-    color: rgb(240, 233, 233)!important;
+    color: rgb(36, 187, 94)!important;
 }
-
-
-
 
 /*------------*/
 
 body {
-    /*padding-top: 20px;
-	padding-bottom: 100px;*/
+    background-image: linear-gradient(to right, #dededf, #d0eeff);
+    /*padding-top: 20px;*/
+	padding-bottom: 100px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
     z-index: 1000;
-    width: 100vw;
-    /*top: 0;
+    top: 0;
 	right: 0;
 	left: 0;
-	min-height: 100%;*/
+	min-height: 100%;
+}
+
+.container-fluid {
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    min-height: 100vh;
 }
 
 .container {
@@ -82,6 +43,7 @@ body {
 table {
     background-color: #ffffff!important;
     mix-blend-mode: luminosity;
+    margin-top: 30px;
 }
 
 .footer-container {
@@ -94,7 +56,7 @@ table {
 footer.footer {
     padding: 15px;
     margin: 20px 0;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #8b8a8a;
     bottom: 0;
     width: 100%;
 }
@@ -105,15 +67,12 @@ footer.footer p {
     display: flex;
 }
 
-
-
-
 /* Main marketing message and sign up button */
 
 .jumbotron {
     text-align: center;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.877);
+    color: rgba(146, 180, 102, 0.925);
 }
 
 .jumbotron .btn {
@@ -122,9 +81,24 @@ footer.footer p {
 }
 
 .navbar {
-    background-image: linear-gradient(to bottom, #f7f7f7b6 0%, #eee 100%);
+    /*background-image: linear-gradient(to bottom, #f7f7f7b6 0%, #eee 100%);
     border: 1px solid #e5e5e5;
-    opacity: .7;
+    opacity: .7;*/
+    background-color: transparent!important;
+}
+.navbar-nav .nav-item {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    text-decoration: underline;
+    font-stretch: expanded;
+}
+
+.card {
+    background-color: rgba(256,256,256,0.3);
 }
 
 @media (min-width: 768px) {
@@ -230,6 +204,9 @@ header h3 {
 .events-card-deck .card {
     position: relative;
     color: black;
+    margin: 0 auto;
+    max-width: 300px;
+    transition: all 0.4s ease-in-out;
 }
 
 .events-card-deck .card .btn-link {
@@ -240,8 +217,10 @@ header h3 {
 
 .events-card-deck .card:hover {
     cursor: pointer;
-    box-shadow: 2px 2px 12px;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.3);
     text-decoration: none;
+    transform: scale(1.01);
+    transition: all 0.4s ease-in-out;
 }
 
 .events-card-deck .card button:hover {
